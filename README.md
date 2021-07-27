@@ -8,7 +8,7 @@ Am citit documentatia pt AWS SDK for Python si am facut un script in python ce i
 
 Am creat template-ul cloudformation pt functia lambda 
 
-Pentru a muta codul de pe local in s3 am folosit comanda:
+Am folosit comanda de mai jos pt a incarca codul python intr-un s3bucket:
 ```
 aws cloudformation package --template-file template.yaml --s3-bucket homework-lambda-s3 --output-template-file output.yaml
 ```
