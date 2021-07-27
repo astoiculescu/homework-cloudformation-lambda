@@ -8,7 +8,9 @@ Am creat template-ul cloudformation pt functia lambda
 
 
 Pentru a muta codul de pe local in s3 am folosit comanda:
-  aws cloudformation package --template-file template.yaml --s3-bucket homework-lambda-s3 --output-template-file output.yaml
+```
+aws cloudformation package --template-file template.yaml --s3-bucket homework-lambda-s3 --output-template-file output.yaml
+```
 
 Deploy stack cu comanda:
   aws cloudformation deploy --template-file output.yaml --stack-name lambda-s3-stack --capabilities CAPABILITY_IAM
