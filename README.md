@@ -8,7 +8,7 @@ Am citit documentatia pt AWS SDK for Python si am facut un script in python ce i
 
 Am creat template-ul cloudformation pt functia lambda 
 
-Am folosit comanda de mai jos pt a incarca codul python intr-un s3bucket:
+Am folosit comanda de mai jos pt a incarca codul python intr-un s3bucket. Fisierul output.yaml este template.yaml in care sectiunea Code este inlocuita cu codul python din s3 bucket.
 ```
 aws cloudformation package --template-file template.yaml --s3-bucket homework-lambda-s3 --output-template-file output.yaml
 ```
